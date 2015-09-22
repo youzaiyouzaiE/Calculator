@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     var isInTheMiddleOfTypingNumber = false;
     
+    var brain = CalculaterBrain()
+    
     @IBAction func apendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         if isInTheMiddleOfTypingNumber {
